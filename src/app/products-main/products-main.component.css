@@ -1,0 +1,12 @@
+.search {
+  display: flex;
+  align-items: stretch;
+}
+
+.favorite {
+  background-color: rgb(144, 247, 221);
+}
+
+.input {
+  width: 25%;
+}

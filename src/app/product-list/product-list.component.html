@@ -1,0 +1,28 @@
+<div class="product">
+  <ul class="product__list">
+    <li
+      *ngFor="let product of products; let i = index;"
+      class="product__item">
+      <img
+        src="{{product.img}}"
+        alt="product.Title"
+        class="product__img">
+      <button
+        class="button"
+        *ngIf="!isActiveAddFavorite"
+        (click)=addFavorite(product)>
+        Add to Favorites
+      </button>
+      <button
+        class="button"
+        *ngIf="isActiveAddFavorite"
+        (click)=removeFavorite(product)>
+        Remove from Favorites
+      </button>
+      <h2>{{product.Title}}</h2>
+      <p>{{product.Description}}</p>
+      <a href="{{product.Url}}">Go to product page</a>
+      <p>Rating: {{product.Rating}}</p>
+    </li>
+  </ul>
+</div>
