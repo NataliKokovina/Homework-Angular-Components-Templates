@@ -1,12 +1,23 @@
 .search {
   display: flex;
+  background-color: #90F7DD83;
   align-items: stretch;
+  padding: 2% 13%;
+  margin: 0;
 }
 
 .favorite {
-  background-color: rgb(144, 247, 221);
+  background-color: #90F7DD33;
 }
 
-.input {
+.search__input {
   width: 25%;
+}
+
+.search__label {
+  padding-right: 2%;
+  color: #4CAF50;
+  font-weight: 800;
+  font-size: 35px;
+  align-self: center;
 }

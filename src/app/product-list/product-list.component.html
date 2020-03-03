@@ -8,21 +8,23 @@
         alt="product.Title"
         class="product__img">
       <button
-        class="button"
+        class="product__button button"
         *ngIf="!isActiveAddFavorite"
         (click)=addFavorite(product)>
         Add to Favorites
       </button>
       <button
-        class="button"
+        class="product__button button"
         *ngIf="isActiveAddFavorite"
         (click)=removeFavorite(product)>
         Remove from Favorites
       </button>
-      <h2>{{product.Title}}</h2>
-      <p>{{product.Description}}</p>
-      <a href="{{product.Url}}">Go to product page</a>
-      <p>Rating: {{product.Rating}}</p>
+      <div class="product__block">
+        <h2 class="product__title">{{product.Title}}</h2>
+        <p>{{product.Description}}</p>
+        <a href="{{product.Url}}">Go to product page</a>
+      </div>
+      <p class="product__rating">Rating: {{product.Rating}}</p>
     </li>
   </ul>
 </div>
