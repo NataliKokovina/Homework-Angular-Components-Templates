@@ -97,7 +97,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         args: [{
           selector: 'app-root',
           templateUrl: './app.component.html',
-          styleUrls: ['./app.component.scss'],
+          styleUrls: ['./app.component.css'],
           encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
         }]
       }], null, null);
